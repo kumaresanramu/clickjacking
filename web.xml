@@ -1,0 +1,12 @@
+<filter>
+        <filter-name>ClickjackPreventionFilterDeny</filter-name>
+        <filter-class>com.xxxx.ClickjackingPreventionFilter</filter-class>
+        <init-param>
+            <param-name>mode</param-name><param-value>DENY</param-value></init-param>
+</filter>
+     
+    <!-- use the Deny version to prevent anyone, including yourself, from framing the page -->
+    <filter-mapping> 
+        <filter-name>ClickjackPreventionFilterDeny</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
