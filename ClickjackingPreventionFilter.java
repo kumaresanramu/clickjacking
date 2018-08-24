@@ -12,7 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 /* types of X-Frame-Options
    X-Frame-Options: deny
    X-Frame-Options: sameorigin
-   X-Frame-Options: allow-from https://example.com/ */
+   X-Frame-Options: allow-from https://example.com/ 
+   furter ref:https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options*/
  
 public class ClickjackingPreventionFilter implements Filter 
 {
